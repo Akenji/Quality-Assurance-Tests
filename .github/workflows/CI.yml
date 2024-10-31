@@ -1,12 +1,12 @@
-name: Continuous Integration
- on:
+name: CI
+on:
   push:
     branches:
       - main  # Runs on pushes to the main branch (adjust as needed)
   pull_request:
     branches:
       - main
- jobs:
+jobs:
   test:
     runs-on: ubuntu-latest
     steps:
